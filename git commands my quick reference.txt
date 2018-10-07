@@ -1,0 +1,34 @@
+# git commands my quick reference.txt
+
+## cd to repo path
+cd /c/users/stevewatkins/AnacondaProjects/PythonForDataAnalysis_2018_Sept
+
+## initialize a pre-existing directory path
+git init
+
+## commit changes to branch
+git commit -m "initial commit"
+
+## create a repository on remote URL from local
+git remote add origin https://github.com/stevewatkins17/PythonForDataAnalysis_2018_Sept.git
+
+## remove a file totally from git (w/o deleting the file)
+git rm --cached "hubway.db"
+
+## clone the remote repository to local 
+git clone https://github.com/stevewatkins17/PythonForDataAnalysis_2018_Sept.git
+
+## create a new branch and switch to it at the same time, on local repository
+git checkout -b hubway_CL_20180928
+
+## push branch to remote repository
+git push -u origin hubway_CL_20180928
+
+## commit branch changes
+git commit -m "change comments"
+
+## go back to master
+git checkout master
+
+## in local Master branch, with changes committed to local feature branch, merge local feature branch to remote feature branch
+git merge hubway_CL_20180928
